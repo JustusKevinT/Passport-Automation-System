@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+{% block title %}Passport Automation System{% endblock %}
+{% block content %}
+<form method="POST">
+  <h3 align="center">Registration Page</h3>
+  <div class="form-group">
+    <label for="applicantid">Applicant Id</label>
+    <input
+       type="text"
+       class="form-control"
+       id="applicantid"
+       name="applicantid"
+       placeholder="Enter Applicant Id"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input
+       type="text"
+       class="form-control"
+       id="name"
+       name="name"
+       placeholder="Enter Name"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="dob">DOB</label>
+    <input
+       type="date"
+       class="form-control"
+       id="dob"
+       name="dob"
+       placeholder="Enter DOB"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="gender">Gender</label>
+    <input
+       type="text"
+       class="form-control"
+       id="gender"
+       name="gender"
+       placeholder="Enter Gender"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="birthplace">BirthPlace</label>
+    <input
+       type="text"
+       class="form-control"
+       id="birthplace"
+       name="birthplace"
+       placeholder="Enter BirthPlace"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="fathername">Father Name</label>
+    <input
+       type="text"
+       class="form-control"
+       id="fathername"
+       name="fathername"
+       placeholder="Enter Father Name"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="address1">Address1</label>
+    <input
+       type="text"
+       class="form-control"
+       id="address1"
+       name="address1"
+       placeholder="Enter Address1"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="address2">Address2</label>
+    <input
+       type="text"
+       class="form-control"
+       id="address2"
+       name="address2"
+       placeholder="Enter Address2"
+    />
+  </div>
+  <div class="form-group">
+    <label for="district">District</label>
+    <input
+       type="text"
+       class="form-control"
+       id="district"
+       name="district"
+       placeholder="Enter District"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="state">State</label>
+    <input
+       type="text"
+       class="form-control"
+       id="state"
+       name="state"
+       placeholder="Enter State"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="country">Country</label>
+    <input
+       type="text"
+       class="form-control"
+       id="country"
+       name="country"
+       placeholder="Enter Country"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="pincode">Pincode</label>
+    <input
+       type="text"
+       class="form-control"
+       id="pincode"
+       name="pincode"
+       placeholder="Enter Pincode"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="mobile">Mobile Number</label>
+    <input
+       type="text"
+       class="form-control"
+       id="moblie"
+       name="mobile"
+       placeholder="Enter Mobile Number"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="emailid">Email Id</label>
+    <input
+       type="text"
+       class="form-control"
+       id="emailid"
+       name="emailid"
+       placeholder="Enter Email Id"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="qualification">Qualification</label>
+    <input
+       type="text"
+       class="form-control"
+       id="qualification"
+       name="qualification"
+       placeholder="Enter Qualification"
+       required="required"
+    />
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

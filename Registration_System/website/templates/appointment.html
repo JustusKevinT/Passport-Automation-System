@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Appointment{% endblock %}
+{% block content %}
+<form method="POST">
+  <h3 align="center">Appointment Page</h3>
+  <div class="form-group">
+    <label for="appointmentid">Appointment Id</label>
+    <input
+       type="text"
+       class="form-control"
+       id="appointmentid"
+       name="appointmentid"
+       placeholder="Enter Appointment Id"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="applicantid">Applicant Id</label>
+    <input
+       type="text"
+       class="form-control"
+       id="applicantid"
+       name="applicantid"
+       placeholder="Enter Applicant Id"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="appointmentdate">Date</label>
+    <input
+       type="date"
+       class="form-control"
+       id="appointmentdate"
+       name="appointmentdate"
+       placeholder="Enter Appointment date"
+       required="required"
+    />
+  </div>
+  <div class="form-group">
+    <label for="appointmenttime">Appointment time</label>
+    <br />
+    <label for="time">Time slots : </label>
+    <label for="timeslots">(8:00 am - 12:00 pm) (1:30 pm - 4:00 pm)</label>
+    <input
+       type="time"
+       class="form-control"
+       id="appointmenttime"
+       name="appointmenttime"
+       placeholder="Enter Appointment time"
+       required="required"
+    />
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary">Get appointment</button>
+</form>
+{% endblock %}

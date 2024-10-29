@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Verification{% endblock %}
+{% block content %}
+<form method="POST">
+  <h3 align="center">Verification page</h3>
+  <div class="form-group">
+    <label for="appointmentid">Appointment Id</label>
+    <input
+       type="text"
+       class="form-control"
+       id="appointmentid"
+       name="appointmentid"
+       placeholder="Enter Appointment Id"
+    />
+  </div>
+  <div class="form-group">
+    <label for="applicantid">Applicant Id</label>
+    <input
+       type="text"
+       class="form-control"
+       id="applicantid"
+       name="applicantid"
+       placeholder="Enter Applicant Id"
+    />
+  </div>
+  <div class="form-group">
+    <label for="officerid">Officer Id</label>
+    <input
+       type="text"
+       class="form-control"
+       id="officerid"
+       name="officerid"
+       placeholder="Enter Officer Id"
+    />
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary">Verify</button>
+</form>
+{% endblock %}
